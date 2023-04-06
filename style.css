@@ -11,17 +11,20 @@ header {
     justify-content: flex-end;
     background-color: #C44B03;
 }
+
 ul {
     display: flex;
-    width: 30rem;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px;
-    margin: 3rem 5rem;
+    flex-direction: column;
+    padding: 2rem;
+  
 }
+
 .nav_anchor {
     color: #FFFFFF;
     font-family: 'Comfortaa', 'cursive';
+}
+li {
+    margin: 0.25rem;
 }
 li:hover {
     animation-name: pulse;
@@ -34,6 +37,21 @@ li:hover {
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
+   
+
+
+
+    @media screen and (min-width: 700px) {
+        ul {
+        width: 30rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px;
+        margin: 3rem 5rem; 
+        }
+
+    }
+
     .em-desenvolvimento {
         display: flex;
         justify-content: center;
