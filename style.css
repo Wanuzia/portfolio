@@ -34,3 +34,17 @@ li:hover {
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
+    .em-desenvolvimento {
+        display: flex;
+        justify-content: center;
+        padding: 10rem;
+        text-transform: uppercase;
+        color: blue;
+        font-weight: 700;
+        font-family: 'Comfortaa', 'cursive';
+
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
