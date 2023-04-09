@@ -8,13 +8,18 @@
 
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
     background-color: #C44B03;
     position: fixed;
     width: -webkit-fill-available;
-    margin-top: -8rem;
 }
 
 ul {
@@ -29,6 +34,7 @@ ul {
 }
 li {
     margin: 0.25rem;
+    cursor: pointer;
 }
 li:hover {
     animation-name: pulse;
@@ -101,17 +107,41 @@ span {
     z-index: -1;
     margin-top: 8rem;
 }
+footer{
+    justify-content: flex-start;
+    background-color: #C44B03; 
+    
+}
+.contacts-list {
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+.contacts-list li {
+    color: #FFFFFF;
+    padding: 0.5rem;
+
+}   
+i {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+    margin: 0.5rem;
+}
 
 @media screen and (min-width: 700px) {
     ul {
     width: 30rem;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px;
-    margin: 3rem 5rem; 
+    }
+    header {
+        padding: 1rem;
     }
     .about {
         width: 70%;
+    }
+    .contacts-list {
+        margin: 2rem 0;
     }
 
 }
