@@ -29,7 +29,7 @@
         {
             "title": "Blog Arte, cultura e Ciência - Wordpress",
             "link": "",
-            "link-desc": " Iniciado em 2015, quando estava em Moçambique",
+            "link-title": " Iniciado em 2015, quando estava em Moçambique",
             "description": "Blog feito no Wordpress. Foi durante a pandemia, devido ao isolamento social, que me dediquei mais à criação de conteúdo para o blog. Então,na tentativa de mudar a exibição do conteúdo na tela que comecei a me interessar por programação, sem saber que se tratava de programação, na época 😁. Atualmente, tenho procurado entender mais o wordpress, utilizando HTML e demais linguagens para estilizar as postagens.",
             "image": "",
             "class": ""
@@ -37,7 +37,7 @@
         {
             "title": "Cubo - FullStack",
             "link": "",
-            "link-desc": "Labenu",
+            "link-title": "Labenu",
             "description": "Projeto FullStack um dos cases para conclusão de formação FullStack na Labenu. Backend, tabela criada no , link da documentação criada com Postman (https://documenter.getpostman.com/view/21448142/2s847HQYKo), deploy realizado com surge.sh (http://cubo-challenge-wanuzia.surge.sh/). Front end feito com React. Link do respositório().",
             "image": "",
             "class": ""
@@ -45,7 +45,7 @@
         {
             "title": "The Movie DB - Front",
             "link": "",
-            "link-desc": "Labenu",
+            "link-title": "Labenu",
             "description": "Projeto Frontend com React que consistiu em consumir a API do themoviedb e criar o frontend com base em um layout do Figma.      Deploy com surge (https://themoviedb-challenge-wanuzia.surge.sh/), repositório no Github (https://github.com/future4code/franklin-Wanuzia-Braga/pull/42). Pretendo retomar o desenvolvimento deste projeto, adicionando novas funcionalidades e melhorando detalhes do layout.",
             "image": "",
             "class": ""

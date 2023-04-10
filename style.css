@@ -5,6 +5,7 @@
     list-style: none;
     color: black;
     font-family: 'Comfortaa', 'cursive';
+    box-sizing: border-box;
 
 }
 
@@ -48,7 +49,9 @@ li:hover {
     100% { transform: scale(1); }
 }
 
-
+p {
+    line-height: 1.5rem;
+}
 .em-desenvolvimento {
         display: flex;
         justify-content: center;
@@ -69,8 +72,8 @@ article {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    padding: 3rem 0.8rem   ;
     margin: 1rem;
+    padding: 2rem 0;
 }
 .profile-pic {
     width: 9.4rem;
@@ -127,6 +130,55 @@ i {
     filter: invert(1);
     margin: 0.5rem;
 }
+.category-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+.category-section>article {
+    padding: 0;
+}
+.section-item {
+    align-self: flex-start;
+}
+.carousel {
+    text-align: justify;
+}
+.background-gray {
+    background-color: #E5E5E5;
+}
+h4 {
+    color: #E74F04;
+    font-size: 1.5rem;
+}
+.item-details {
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
+.item-title {
+    color: #828282;
+}
+/* o carrossel será desenvolvido */
+.carrossel-container {
+    /* width: 80%;
+    height: 25vw;
+    position: absolute; */
+
+}
+.carrossel-item {
+    margin: 10px 0;
+    /* position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 800ms; */
+}
+
+.selected {
+    /* opacity: 1; */
+}
 
 @media screen and (min-width: 700px) {
     ul {
@@ -142,6 +194,12 @@ i {
     }
     .contacts-list {
         margin: 2rem 0;
+    }
+    article {
+        padding: 3rem 0.8rem   ;
+    }
+    .carousel {
+        margin: 1rem 100px;
     }
 
 }
