@@ -2,7 +2,7 @@
     "transition": [
         {
             "title": "Ciclo formativo O Poder do Futuro",
-            "link": "",
+            "link": "https://github.com/Wanuzia/portfolio",
             "link-title": "Pretalab Olabi",
             "description": "Ciclo Formativo o Poder do Futuro, onde tive oportunidade de me sentir parte de uma comunidade de mulheres negras que fizeram e outras que estão fazendo a transição de carreira para a área da tecnologia. O principal resultado na minha carreira, foi exatamente pensar em carreira tendo em vista minha própria identidade e contexto social. A ideia deste portfolio foi o requisito para conclusão deste respectivo ciclo formativo. Principais aprendizados: HTML, CSS, JAVASCRIPT, Desenvolvimento de carreira.",
             "image": "",
@@ -10,7 +10,7 @@
         },
         {
             "title": "Programa Desenvolve",
-            "link": "",
+            "link": "https://github.com/Wanuzia/portfolio",
             "link-title": "Grupo Boticário",
             "description": "Programa Desenvolve edição 2022, de janeiro a outubro de 2023. Foi através da seleção para estudar a Trilha FullStack que dei os primeiros passos na programação. Fiz aulas na Alura e na Labenu, durante o período do Programa. Contratada para exercer o cargo de Developer I, sendo o marco da minha inserção no mercado. Principais aprendizados: HTML, CSS, JAVASCRIPT, REACT, NODE, SQL, trabalho em grupo desenvolvimento de carreira.",
             "image": "",
@@ -18,8 +18,8 @@
         },
         {
             "title": "Produtora cultural",
-            "link": "",
-            "link-title": "Licenciada em Estudos Culturais e especialista em Linguagens artísticas, cultura e educação",
+            "link": "https://github.com/Wanuzia/portfolio",
+            "link-title": "Especialista em Linguagens artísticas, cultura e educação",
             "description": "De 2013 a 2022 atuei como produtora independente e assistente de produção em eventos nacionais e internacionais. Foi meu interesse  pelas artes que me levou a criar o blog Arte, cultura e ciência, aonde procurei partilhar conhecimento na área, de acordo com meus aprendizados e experiências. Principais aprendizados: teoria cultural, produção de eventos, trabalho sobre pressão. Desenvolvi também artigos científicos durante minhas formações na área, que podem ser consultados com mais detalhes no meu perfil no CurriculoLattes().",
             "image": "",
             "class": ""

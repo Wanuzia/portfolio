@@ -26,8 +26,11 @@
 
     <title>Portfolio by Wanuzia</title>
   </head>
-  <body>
+    <body>
     <header>
+      <div class="animation">
+       <h1 id="animated-text"></h1>
+      </div>
       <nav>
         <ul>
           <li>
@@ -66,43 +69,50 @@
           </div>
         </article>
       </section>
-      <section id="transicao" data-js="transition-section" class="category-section  background-gray">
+      <section id="transicao" data-js="transition-section" class="category-section background-gray">
         <article>
-        <div class="section-item">
-          <h4>Transição de Carreira</h4>
-        </div>
-        <div class="carousel">
-          <div class="carrossel-container" id="transition-container">        
+          <div class="section-item">
+            <h4>Transição de Carreira</h4>
           </div>
-        </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="transition-container"></div>
+          </div>
         </article>
       </section>
-      <section id="projetos" data-js="projects-section" class="category-section">
-           <article>
-        <div class="section-item">
-          <h4>Projetos</h4>
-        </div>
-        <div class="carousel">
-          <div class="carrossel-container" id="projects-container">        
+      <section id="projetos" data-js="projects-section" class="category-section projects">
+        <article>
+          <div class="section-item">
+            <h4>Projetos</h4>
           </div>
-        </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="projects-container"></div>
+          </div>
         </article>
-     </section>
+      </section>
     </main>
     <footer id="contato">
       <div>
-        <ul class="contacts-list">
-          <li href="https://www.linkedin.com/in/wanuzia-braga/"><i class="fab fa-linkedin"></i>Wanuzia Braga</li>
-          <li href="https://github.com/Wanuzia">
+        <div class="contacts-list">
+          <div class="contact-item">
+          <a href="https://www.linkedin.com/in/wanuzia-braga/" target="_blank">
+            <i class="fab fa-linkedin"></i>Wanuzia Braga
+          </a>
+          </div>
+           <div class="contact-item">
+          <a href="https://github.com/Wanuzia" target="_blank">
             <i class="fab fa-github-square"></i>Wanuzia
-          </li>
-          <li href="https://arteculturaeciencia.wordpress.com/">
+          </a>
+          </div>
+           <div class="contact-item">
+          <a href="https://arteculturaeciencia.wordpress.com/" target="_blank">
             <i class="fab fa-wordpress"></i>Arte, cultura e ciência
-          </li>
-        </ul>
-        <a href="#initial">Top</a>
+          </a>
+          </div>
+        </div>
+        <a href="#initial" script="cursor: pointer; margin: 1rem; color: '#FFFFFF'">Top</a>
       </div>
     </footer>
+    <script src="textAnimation.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

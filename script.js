@@ -20,12 +20,12 @@
 
 // window.addEventListener("load", start)
 
-const data = [
-  transition = [
+const data = {
+  transition: [
     {
       title: "Ciclo formativo O Poder do Futuro",
       link: "",
-      "link-title": "Pretalab Olabi",
+      linkTitle: "Pretalab Olabi",
       description:
         "Ciclo Formativo o Poder do Futuro, onde tive oportunidade de me sentir parte de uma comunidade de mulheres negras que fizeram e outras que estão fazendo a transição de carreira para a área da tecnologia. O principal resultado na minha carreira, foi exatamente pensar em carreira tendo em vista minha própria identidade e contexto social. A ideia deste portfolio foi o requisito para conclusão deste respectivo ciclo formativo. Principais aprendizados: HTML, CSS, JAVASCRIPT, Desenvolvimento de carreira.",
       image: "",
@@ -34,7 +34,7 @@ const data = [
     {
       title: "Programa Desenvolve",
       link: "",
-      "link-title": "Grupo Boticário",
+      linkTitle: "Grupo Boticário",
       description:
         "Programa Desenvolve edição 2022, de janeiro a outubro de 2023. Foi através da seleção para estudar a Trilha FullStack que dei os primeiros passos na programação. Fiz aulas na Alura e na Labenu, durante o período do Programa. Contratada para exercer o cargo de Developer I, sendo o marco da minha inserção no mercado. Principais aprendizados: HTML, CSS, JAVASCRIPT, REACT, NODE, SQL, trabalho em grupo desenvolvimento de carreira.",
       image: "",
@@ -43,74 +43,108 @@ const data = [
     {
       title: "Produtora cultural",
       link: "",
-      "link-title":
-        "Especialista em Linguagens artísticas, cultura e educação",
+      linkTitle: "Especialista em Linguagens artísticas, cultura e educação",
       description:
         "De 2013 a 2022 atuei como produtora independente e assistente de produção em eventos nacionais e internacionais. Foi meu interesse  pelas artes que me levou a criar o blog Arte, cultura e ciência, aonde procurei partilhar conhecimento na área, de acordo com meus aprendizados e experiências. Principais aprendizados: teoria cultural, produção de eventos, trabalho sobre pressão. Desenvolvi também artigos científicos durante minhas formações na área, que podem ser consultados com mais detalhes no meu perfil no CurriculoLattes().",
       image: "",
       class: "",
     },
   ],
-  projects = [
+  projects: [
     {
       title: "Blog Arte, cultura e Ciência - Wordpress",
-      link: "",
-      "link-title": " Iniciado em 2015, quando estava em Moçambique",
+      link: "https://arteculturaeciencia.wordpress.com/",
+      linkTitle: "Blog feito no Wordpress",
       description:
-        "Blog feito no Wordpress. Foi durante a pandemia, devido ao isolamento social, que me dediquei mais à criação de conteúdo para o blog. Então,na tentativa de mudar a exibição do conteúdo na tela que comecei a me interessar por programação, sem saber que se tratava de programação, na época 😁. Atualmente, tenho procurado entender mais o wordpress, utilizando HTML e demais linguagens para estilizar as postagens.",
+        "Iniciado em 2015, quando estava em Moçambique, mas foi durante a pandemia, devido ao isolamento social, que me dediquei mais à criação de conteúdo para o blog. Então,na tentativa de mudar a exibição do conteúdo na tela que comecei a me interessar por programação, sem saber que se tratava de programação, na época 😁. Atualmente, tenho procurado entender mais o wordpress, utilizando HTML e demais linguagens para estilizar as postagens.",
       image: "",
       class: "",
     },
     {
       title: "Cubo - FullStack",
-      link: "",
-      "link-title": "Labenu",
+      link: "(http://cubo-challenge-wanuzia.surge.sh/)",
+      linkTitle: "Cubo by Wanuzia",
       description:
-        "Projeto FullStack um dos cases para conclusão de formação FullStack na Labenu. Backend, tabela criada no , link da documentação criada com Postman (https://documenter.getpostman.com/view/21448142/2s847HQYKo), deploy realizado com surge.sh (http://cubo-challenge-wanuzia.surge.sh/). Front end feito com React. Link do respositório().",
+        "Projeto FullStack um dos cases para conclusão de formação FullStack na Labenu. Backend, tabela criada no , link da documentação criada no Postman, deploy realizado com surge.sh. Front end feito com React.",
       image: "",
       class: "",
     },
     {
       title: "The Movie DB - Front",
-      link: "",
-      "link-title": "Labenu",
+      link: "https://themoviedb-challenge-wanuzia.surge.sh/",
+      linkTitle: "The Movie DB by Wanuzia",
       description:
-        "Projeto Frontend com React que consistiu em consumir a API do themoviedb e criar o frontend com base em um layout do Figma.      Deploy com surge (https://themoviedb-challenge-wanuzia.surge.sh/), repositório no Github (https://github.com/future4code/franklin-Wanuzia-Braga/pull/42). Pretendo retomar o desenvolvimento deste projeto, adicionando novas funcionalidades e melhorando detalhes do layout.",
+        "Projeto Frontend com React que consistiu em consumir a API do themoviedb e criar o frontend com base em um layout do Figma. Deploy com surge,repositório no Github. Pretendo retomar o desenvolvimento deste projeto, adicionando novas funcionalidades e melhorando detalhes do layout.",
       image: "",
       class: "",
     },
   ],
-];
-data.map((item) => {
-    const carouselContainer = item === "transition" ? document.querySelector("#transition-container") : document.querySelector("#projects-container");
-    item.forEach((type) => {
-        const carouselItem = document.createElement("div");
-        carouselItem.classList.add("carrossel-item");
+};
+data.transition.forEach((item) => {
+  const carouselContainer = document.querySelector("#transition-container");
+  const carouselItem = document.createElement("div");
+  carouselItem.classList.add("carrossel-item");
+
+  const itemDetails = document.createElement("div");
+  itemDetails.classList.add("item-details");
+
+  const newTitle = document.createElement("p");
+  newTitle.classList.add("item-title");
+
+  const itemLink = document.createElement("a");
+  itemLink.classList.add("item-link");
+
+  const newDescription = document.createElement("p");
+  newDescription.classList.add("item-description");
+
+  newTitle.textContent = item.title;
+  itemLink.textContent = item["link-title"];
+  itemLink.href = item.link;
+  itemLink.target = "_blank";
+  newDescription.textContent = item.description;
+
+  carouselContainer.appendChild(carouselItem);
+  carouselItem.appendChild(itemDetails);
+  carouselItem.appendChild(newDescription);
+  itemDetails.appendChild(newTitle);
+  itemDetails.appendChild(itemLink);
+});
+data.projects.forEach((item) => {
+  const carouselContainer = document.querySelector("#projects-container");
+  const carouselItem = document.createElement("div");
+  carouselItem.classList.add("carrossel-item");
+
+  const itemDetails = document.createElement("div");
+  itemDetails.classList.add("item-details");
+
+
+  const newTitle = document.createElement("p");
+    newTitle.classList.add("item-title");
     
-        const itemDetails = document.createElement("div");
-        itemDetails.classList.add("item-details");
+  const button = document.createElement("div");
+    button.classList.add("button-link");
     
-        const newTitle = document.createElement("p");
-        newTitle.classList.add("item-title");
+  const itemLink = document.createElement("a");
+  itemLink.classList.add("item-link");
+
+  const newDescription = document.createElement("p");
+  newDescription.classList.add("item-description");
+
+  newTitle.textContent = item.title;
+  itemLink.textContent = item.linkTitle;
+  itemLink.href = item.link;
+  itemLink.target = "_blank";
+  newDescription.textContent = item.description;
     
-        const itemLink = document.createElement("a");
-        itemLink.classList.add("item-link");
-    
-        const newDescription = document.createElement("p");
-        newDescription.classList.add("item-description");
-    
-        newTitle.textContent = type.title;
-        itemLink.textContent = type["link-title"];
-        itemLink.href = type.link;
-        itemLink.target = "_blank";
-        newDescription.textContent = type.description;
-    
-        carouselContainer.appendChild(carouselItem);
-        carouselItem.appendChild(itemDetails);
-        carouselItem.appendChild(newDescription);
-        itemDetails.appendChild(newTitle)
-        itemDetails.appendChild(itemLink)
-    })
-  });
+  button.appendChild(itemLink)
+
+  carouselContainer.appendChild(carouselItem);
+  carouselItem.appendChild(itemDetails);
+  carouselItem.appendChild(newDescription);
+  itemDetails.appendChild(newTitle);
+  itemDetails.appendChild(button);
+
+//   button.appendChild(itemLink);
+});
 
 //essa versão só está retornando os dados da div projects-container//
