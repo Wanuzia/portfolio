@@ -62,7 +62,7 @@ const data = {
     },
     {
       title: "Cubo - FullStack",
-      link: "(http://cubo-challenge-wanuzia.surge.sh/)",
+      link: "http://cubo-challenge-wanuzia.surge.sh/",
       linkTitle: "Cubo by Wanuzia",
       description:
         "Projeto FullStack um dos cases para conclusão de formação FullStack na Labenu. Backend, tabela criada no , link da documentação criada no Postman, deploy realizado com surge.sh. Front end feito com React.",
@@ -93,14 +93,15 @@ data.transition.forEach((item) => {
 
   const itemLink = document.createElement("a");
   itemLink.classList.add("item-link");
+  itemLink.classList.add("disabled");
 
   const newDescription = document.createElement("p");
   newDescription.classList.add("item-description");
 
   newTitle.textContent = item.title;
-  itemLink.textContent = item["link-title"];
-  itemLink.href = item.link;
-  itemLink.target = "_blank";
+  itemLink.textContent = item.linkTitle;
+  // itemLink.href = item.link;
+  // itemLink.target = "_blank";
   newDescription.textContent = item.description;
 
   carouselContainer.appendChild(carouselItem);
@@ -144,7 +145,7 @@ data.projects.forEach((item) => {
   itemDetails.appendChild(newTitle);
   itemDetails.appendChild(button);
 
-//   button.appendChild(itemLink);
+  button.appendChild(itemLink);
 });
 
 //essa versão só está retornando os dados da div projects-container//
