@@ -1,6 +1,12 @@
 # Portfolio
 Portfólio iniciado como projeto final no Ciclo Formativo o Poder do Futuro - PretaLab - Olabi, e continua em desenvolvimento durante o Elas na Tech, 2023.
 
+<div align='center'>
+
+https://github.com/Wanuzia/portfolio/assets/98324557/e332bcfc-a923-4ba8-b2c8-dd414afdc6d2
+
+
+</div>
 
 ## Stacks utilizadas
 
