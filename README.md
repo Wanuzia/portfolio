@@ -1,11 +1,5 @@
 # Portfolio
-Portfólio desenvolvido como projeto final no Ciclo Formativo o Poder do Futuro - PretaLab - Olabi, 2023.
-
-
-
-https://user-images.githubusercontent.com/98324557/230255629-2674d5c5-ba5c-4ab6-a85d-f55f10309fd4.mov
-
-
+Portfólio iniciado como projeto final no Ciclo Formativo o Poder do Futuro - PretaLab - Olabi, e continua em desenvolvimento durante o Elas na Tech, 2023.
 
 
 ## Stacks utilizadas
